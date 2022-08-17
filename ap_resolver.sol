@@ -81,6 +81,8 @@ contract AP_resolver {
         rc._identifier = _identifier;
 
         receipt_id ++;
+
+        emit receipt_registered(_owner, receipt_id, _receipt_address, _standard);
         return receipt_id ;
     }
 
